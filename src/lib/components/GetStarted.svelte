@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { arrowUp } from 'src/assets';
+  import { ArrowUp } from 'src/lib/components/Icons';
 </script>
 
 <div
@@ -10,28 +10,11 @@
       <p class="font-poppins font-medium text-[1.125rem] leading-[1.438rem]">
         <span class="text-gradient">Get</span>
       </p>
-      <img src={arrowUp} class="w-auto h-auto object-contain" alt="arrow icon" />
+      <ArrowUp classes="w-auto h-auto object-contain" />
+      <!-- <img src={arrowUp} class="w-auto h-auto object-contain" alt="arrow icon" /> -->
     </div>
     <p class="font-poppins font-medium text-[1.125rem] leading-[1.438rem]">
       <span class="text-gradient">Started</span>
     </p>
   </div>
 </div>
-
-<style>
-  .container img {
-    animation: up-down 1.5s ease-in-out infinite;
-  }
-
-  @keyframes up-down {
-    0% {
-      transform: translate(0);
-    }
-    50% {
-      transform: translate(5px, -5px);
-    }
-    100% {
-      transform: translate(0);
-    }
-  }
-</style>

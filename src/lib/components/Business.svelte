@@ -21,7 +21,7 @@
         class="flex items-center gap-6 rounded-[20px] p-5 hover:cursor-pointer feature-card"
       >
         <div class="w-16 aspect-square flex bg-dimBlue items-center justify-center rounded-full">
-          <img src={feature.icon} alt="icon {feature.icon}" class="w-1/2 h-1/2" />
+          <svelte:component this={feature.icon} classes="w-1/2 h-1/2" />
         </div>
         <div>
           <h4 class="text-lg font-semibold mb-2">{feature.title}</h4>

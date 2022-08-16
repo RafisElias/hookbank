@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { logo } from 'src/assets';
+  import Logo from 'src/lib/components/Svgs/Logo.svelte';
   import { footerLinks, socialMedia } from 'src/constants';
 </script>
 
@@ -8,7 +8,8 @@
 >
   <div class="section justify-between items-start w-full gap-y-4">
     <div class="flex flex-1 flex-col">
-      <img src={logo} alt="hoobank logo footer" class="mb-5 w-[266px] h-[72px] object-contain" />
+      <Logo classes="mb-5 w-[266px] h-[72px] object-contain" />
+      <!-- <img src={logo} alt="hoobank logo footer" class="mb-5 w-[266px] h-[72px] object-contain" /> -->
       <p class="paragraph max-w-[310px] text-center md:text-left">
         A new way to make the payments easy, reliable and secure.
       </p>
@@ -34,10 +35,10 @@
     <p class="text-lg text-center">Copyright 2021 HooBank. All Rights Reserved.</p>
     <div class="flex flex-row md:mt-0 mt-6 gap-6 justify-center">
       {#each socialMedia as social}
-        <img
-          src={social.icon}
-          alt={social.id}
-          class="w-6 aspect-square object-contain cursor-pointer"
+        <svelte:component
+          this={social.icon}
+          classes="w-auto h-auto cursor-pointer hover:text-secondary"
+          aria
         />
       {/each}
     </div>

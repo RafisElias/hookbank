@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { logo, menu, close } from 'src/assets';
+  import Logo from './Svgs/Logo.svelte';
+  import { Menu, Close } from './Icons';
   import { navLinks } from 'src/constants';
 
   let toogle = false;
@@ -8,7 +9,7 @@
 <header class="box-width mx-auto padding-x lg:px-16 xl:px-0 text-white py-6">
   <div class="flex justify-between items-center">
     <a href="/">
-      <img src={logo} alt="hookbank logo" class="h-8" />
+      <Logo classes="h-8 w-auto" />
     </a>
     <nav>
       <ul class="list-none sm:flex hidden gap-14 items-center">
@@ -25,12 +26,13 @@
       </ul>
 
       <div class="sm:hidden flex relative">
-        <img
-          src={toogle ? close : menu}
-          alt="menu"
-          class="w-7 object-contain aspect-square cursor-pointer"
-          on:click={() => (toogle = !toogle)}
-        />
+        <div on:click={() => (toogle = !toogle)}>
+          {#if toogle}
+            <Close classes="w-7 h-auto object-contain aspect-square cursor-pointer" />
+          {:else}
+            <Menu classes="w-7 h-auto object-contain aspect-square cursor-pointer" />
+          {/if}
+        </div>
 
         <div
           class={toogle

@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { discount, robot } from 'src/assets';
+  import { robot } from 'src/assets';
+  import { Discount } from 'src/lib/components/Icons';
   import GetStarted from './GetStarted.svelte';
 </script>
 
@@ -11,7 +12,8 @@
     <div
       class="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 gap-2"
     >
-      <img src={discount} alt="discount icon" />
+      <Discount />
+      <!-- <img src={discount} alt="discount icon" /> -->
       <p class="paragraph">
         <span class="text-white">20%</span> DISCOUNT FOR
         <span class="text-white">1 MONTH</span> ACCOUNT

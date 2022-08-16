@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { bill, google, apple } from 'src/assets';
+  import { bill } from 'src/assets';
+  import { Google, Apple } from 'src/lib/components/Icons';
 </script>
 
 <section
@@ -20,8 +21,11 @@
       orci rhoncus aliporttitor integer platea placerat.
     </p>
     <div class="flex gap-8 w-full justify-center ss:justify-start">
-      <img src={google} alt="google play store" class="cursor-pointer" />
-      <img src={apple} alt="apple store" class="cursor-pointer" />
+      <Google classes="cursor-pointer" />
+      <Apple classes="cursor-pointer" />
+
+      <!-- <img src={google} alt="google play store" class="cursor-pointer" /> -->
+      <!-- <img src={apple} alt="apple store" class="cursor-pointer" /> -->
     </div>
   </div>
 </section>
