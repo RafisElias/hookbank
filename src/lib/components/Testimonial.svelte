@@ -21,7 +21,7 @@
           {feedback.content}
         </p>
         <div class="flex items-center gap-4">
-          <img src={feedback.img} alt={feedback.img} class="w-12 aspect-square" />
+          <img src={feedback.img} alt={feedback.img} class="w-12 aspect-square" loading="lazy" />
           <div>
             <p class="text-xl leading-8 font-semibold">{feedback.name}</p>
             <p class="text-base text-dimWhite font-normal">{feedback.title}</p>

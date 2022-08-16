@@ -8,7 +8,7 @@
   class="grid md:grid-cols-2 grid-cols-1 gap-12 padding-y text-white font-poppins"
 >
   <div class="section-info relative">
-    <img src={bill} alt="bill" class="z-[5] relative" />
+    <img src={bill} alt="bill" class="z-[5] relative" loading="lazy" />
     <div class="absolute z-[3] -left-1/2 top-0 w-1/2 h-1/2 rounded-full white__gradient" />
     <div class="absolute z-0 -left-1/2 bottom-0 w-1/2 h-1/2 rounded-full pink__gradient" />
   </div>
@@ -23,9 +23,6 @@
     <div class="flex gap-8 w-full justify-center ss:justify-start">
       <Google classes="cursor-pointer" />
       <Apple classes="cursor-pointer" />
-
-      <!-- <img src={google} alt="google play store" class="cursor-pointer" /> -->
-      <!-- <img src={apple} alt="apple store" class="cursor-pointer" /> -->
     </div>
   </div>
 </section>

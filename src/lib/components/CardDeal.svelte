@@ -18,6 +18,6 @@
     <Button title="Get Start" />
   </div>
   <div class="section-info">
-    <img src={card} alt="card" />
+    <img src={card} alt="card" loading="lazy" />
   </div>
 </section>

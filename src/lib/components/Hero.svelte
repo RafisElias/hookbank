@@ -13,7 +13,6 @@
       class="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 gap-2"
     >
       <Discount />
-      <!-- <img src={discount} alt="discount icon" /> -->
       <p class="paragraph">
         <span class="text-white">20%</span> DISCOUNT FOR
         <span class="text-white">1 MONTH</span> ACCOUNT
@@ -40,7 +39,7 @@
     </p>
   </div>
   <div class="flex flex-1 flex-center md:my-0 my-10 relative">
-    <img src={robot} alt="robot" class="w-full h-full z-[5] relative" />
+    <img src={robot} alt="robot" class="w-full h-full z-[5] relative" loading="lazy" />
     <div class="absolute z-0 w-2/5 h-[35%] top-0 pink__gradient" />
     <div class="absolute z-[1] w-4/5 rounded-full h-4/5 bottom-40 white__gradient" />
     <div class="absolute z-0 w-1/2 h-1/2 rigth-20 bottom-20 blue__gradient" />
