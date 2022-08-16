@@ -13,7 +13,10 @@
     <nav>
       <ul class="list-none sm:flex hidden gap-14 items-center">
         {#each navLinks as link}
-          <li class="font-poppins font-normal text-base" class:text-dimWhite={link.id !== 'home'}>
+          <li
+            class="font-poppins font-normal text-base hover:text-white"
+            class:text-dimWhite={link.id !== 'home'}
+          >
             <a href="#{link.id}">
               {link.title}
             </a>
