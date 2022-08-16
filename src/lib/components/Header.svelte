@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { logo, menu, close } from 'src/assets';
   import { navLinks } from 'src/constants';
 
   let toogle = false;
@@ -7,7 +8,7 @@
 <header class="box-width mx-auto padding-x lg:px-16 xl:px-0 text-white py-6">
   <div class="flex justify-between items-center">
     <a href="/">
-      <img src="src/assets/logo.svg" alt="hookbank logo" class="h-8" />
+      <img src={logo} alt="hookbank logo" class="h-8" />
     </a>
     <nav>
       <ul class="list-none sm:flex hidden gap-14 items-center">
@@ -22,7 +23,7 @@
 
       <div class="sm:hidden flex relative">
         <img
-          src={toogle ? 'src/assets/close.svg' : 'src/assets/menu.svg'}
+          src={toogle ? close : menu}
           alt="menu"
           class="w-7 object-contain aspect-square cursor-pointer"
           on:click={() => (toogle = !toogle)}

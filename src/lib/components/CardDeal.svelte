@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { card } from 'src/assets';
   import Button from './Button.svelte';
 </script>
 
@@ -17,6 +18,6 @@
     <Button title="Get Start" />
   </div>
   <div class="section-info">
-    <img src="src/assets/card.png" alt="card" />
+    <img src={card} alt="card" />
   </div>
 </section>

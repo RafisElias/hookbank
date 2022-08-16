@@ -1,11 +1,13 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import { bill, google, apple } from 'src/assets';
+</script>
 
 <section
   id="product"
   class="grid md:grid-cols-2 grid-cols-1 gap-12 padding-y text-white font-poppins"
 >
   <div class="section-info relative">
-    <img src="src/assets/bill.png" alt="bill" class="z-[5] relative" />
+    <img src={bill} alt="bill" class="z-[5] relative" />
     <div class="absolute z-[3] -left-1/2 top-0 w-1/2 h-1/2 rounded-full white__gradient" />
     <div class="absolute z-0 -left-1/2 bottom-0 w-1/2 h-1/2 rounded-full pink__gradient" />
   </div>
@@ -18,8 +20,8 @@
       orci rhoncus aliporttitor integer platea placerat.
     </p>
     <div class="flex gap-8 w-full justify-center ss:justify-start">
-      <img src="src/assets/google.svg" alt="google play store" class="cursor-pointer" />
-      <img src="src/assets/apple.svg" alt="apple store" class="cursor-pointer" />
+      <img src={google} alt="google play store" class="cursor-pointer" />
+      <img src={apple} alt="apple store" class="cursor-pointer" />
     </div>
   </div>
 </section>

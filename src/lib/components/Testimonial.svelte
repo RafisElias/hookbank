@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { quotes } from 'src/assets';
   import { feedbacks } from 'src/constants';
 </script>
 
@@ -16,7 +17,7 @@
         class="flex flex-col justify-between px-10 py-12 gap-10 rounded-[20px] feedback-card cursor-pointer max-w-[370px] my-5"
       >
         <div>
-          <img src="src/assets/quotes.svg" alt="double quotes" />
+          <img src={quotes} alt="double quotes" />
         </div>
         <p class="text-lg font-normal tracking-wide leading-8">
           {feedback.content}

@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import { arrowUp } from 'src/assets';
+</script>
 
 <div
   class="flex-center w-[8.75rem] aspect-square bg-blue-gradient rounded-full p-[0.125rem] cursor-pointer"
@@ -8,7 +10,7 @@
       <p class="font-poppins font-medium text-[1.125rem] leading-[1.438rem]">
         <span class="text-gradient">Get</span>
       </p>
-      <img src="src/assets/arrow-up.svg" class="w-auto h-auto object-contain" alt="arrow icon" />
+      <img src={arrowUp} class="w-auto h-auto object-contain" alt="arrow icon" />
     </div>
     <p class="font-poppins font-medium text-[1.125rem] leading-[1.438rem]">
       <span class="text-gradient">Started</span>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { logo } from 'src/assets';
   import { footerLinks, socialMedia } from 'src/constants';
 </script>
 
@@ -7,11 +8,7 @@
 >
   <div class="section justify-between items-start w-full gap-y-4">
     <div class="flex flex-1 flex-col">
-      <img
-        src="src/assets/logo.svg"
-        alt="hoobank logo footer"
-        class="mb-5 w-[266px] h-[72px] object-contain"
-      />
+      <img src={logo} alt="hoobank logo footer" class="mb-5 w-[266px] h-[72px] object-contain" />
       <p class="paragraph max-w-[310px] text-center md:text-left">
         A new way to make the payments easy, reliable and secure.
       </p>
